@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>function</h1>
+    <p id="demo"></p>
+
+    <script>
+        //function is a block o code used to perform a particular task.
+        //function is executed once itt is invoked/call
+
+        //function defination
+        function myFunction (arg1,arg2)
+{
+    //block of code to perform some task
+    console.log("inside myFunction::",arg1,arg2);//statement 1
+    return arg1*arg2;   //statement 2
+}     
+
+const result =myFunction(10,20);
+console.log("return value",result);
+
+const result1 =myFunction(23,220);
+console.log("return value",result1);
+
+document.getElementById("demo").innerHTML=myFunction(20,10);
+
+    </script>
+    
+</body>
+</html>
