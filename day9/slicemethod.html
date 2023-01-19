@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo"></p>
+
+    <script>
+      /*
+        JavaScript String slice()
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: start position, and end position (end not included).
+*/
+      let text = "Apple, Banana, Kiwi";
+      let part = text.slice(7, 13);
+      document.getElementById("demo").innerHTML = part;
+
+      //If you omit the second parameter, the method will slice out the rest of the string:
+      let part1 = text.slice(7); //start posittion 7 se bbaki ka sabhi end position ttak  sabhi dikhengga
+
+      document.getElementById("demo").innerHTML = part1;
+
+      /*
+    If a parameter is negative, the position is counted from the end of the string:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+
+This example slices out a portion of a string from position -12 to position -6:
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12, -6);
+*/
+
+      let part2 = text.slice(-12);
+      document.getElementById("demo").innerHTML = part2;
+    </script>
+  </body>
+</html>

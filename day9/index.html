@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string method</title>
+  </head>
+  <body>
+    <h1>string method slice</h1>
+
+    <p id="demo"></p>
+
+    <script>
+      const text = "ABCDEF";
+      console.log("total string lenghth::", text.lenght);
+      //requirement- extract CD from above text
+      //slice (startposition,endposittion)---  END posittion not included.example
+      //IT return new string
+
+      const extractedtext = text.slice(2,4);
+      console.log("extentedtext is ::", extractedtext);
+
+      let text1 = "Apple, Banana, Kiwi";
+      let part1 = text1.slice(7, 13);
+      document.getElementById("demo").innerHTML = part1;
+     
+    </script>
+  </body>
+</html>
