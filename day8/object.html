@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo"></p>
+    
+    <script>
+    // Create an object:
+    const person = {
+        firstName:"John",
+         lastName:"Doe",
+          age:50,
+           eyeColor:  "blue" , //console.log(person.firstName);---1. tarika
+           "skin color":"brown",//object me space hai to console.log(person['skin color']); 2---dusra tarika
+
+           fullname:function()
+           {
+            return  this.firstName+" "+this.lastName;
+           },
+        
+        };
+
+
+      console.log(person.firstName);
+      console.log(person['skin color']);
+      console.log(person['firstname']);
+      console.log(person['age']);
+      console.log(person["lastName"]);
+
+/*
+    // Display some data from the object:
+    document.getElementById("demo").innerHTML =
+    person.firstName + " is " + person.age + " years old.";
+    */
+
+    document.getElementById("demo").innerHTML=person.fullname();
+    </script>
+    
+    </body>
+    </html>
+    
