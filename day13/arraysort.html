@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <h1>array sorttinng</h1>
+
+    <input type="number" id="numInputId" placceholder="Enter number"/>
+
+    <button onclick="onAddNumberClicked()">Add Number to the Array</button>
+<br/>
+<input type="text" placeholder="Enter Fruits"/>
+<button onclick="onAddFruitsClicked()">Add Fruits to the Array</button>
+
+<p id="numId"></p>
+<p id="fruitsId"></p>
+
+<script>
+
+    //array number print
+    const numbersArray=[];//array number
+    const fruits=[];//array strin
+
+    const  programNumberElement=document.getElementById("numId");//number
+    console.log("programNumberElement",programNumberElement);//number
+
+    const inputNumberElement=document.getElementById("numInputId");//number
+    inputNumberElement.value=0;//number//number
+    console.log("inputnumberelement",inputNumberElement);//number
+
+
+    const  fruitsInputElement=document.getElementById("fruitInputId");//fruitts
+    const fruitsparagraphElement=document.getElementById("fruitsId");
+    console.log("inputstringlement",fruitsInputElement);
+
+
+
+    function onAddNumberClicked()
+    {
+        //block code
+        console.log("value of input box", inputNumberElement.value);
+        numbersArray.push(Number(inputNumberElement.value));
+        programNumberElement.innerHTML=numbersArray.join("|");
+    }
+
+    function onAddFruitsClicked()
+    {
+        //block code
+        //console.log("value of input box", fruitsInputElement.value);
+        fruits.push(Number(fruitsInputElement.value));
+        fruitsparagraphElement.innerHTML=fruits.join("|");
+    }
+</script>
+
+</body>
+</html>
