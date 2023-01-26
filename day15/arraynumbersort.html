@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        const numArray=[2,9,8,6,3,100];
+        numArray.sort(function(a,b){
+            console.log("value of a is=",a);
+            console.log("value of a is=",b);
+            console.log("value of a is=",b-a);
+  
+
+           return b-a;//desending order array sorting and swap a-b assending order array number
+        });
+        document.getElementById("demo").innerHTML=numArray.join("|");
+    </script>
+    
+</body>
+</html>
