@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    
+    <script>
+        const numbers=[10,20,30,50,60,70];
+          
+       const sum= numbers.reduce(function(
+        accumulator,//preiousvalue
+        value,  //current value
+        index,
+        array
+        )  //accumulator first is previes value ,value is /innitial value/current value
+       
+        {
+           console.log("accumulator previous value is=",accumulator,value,index,array);
+            return accumulator+value; //accumulattor/previes value /first value leta hai
+        },
+        0);//0 isliye hai  ki  const numbers=[10,20,30,50,60,70]; generaly reduce array[1] se start hota hai 0 of array[0]starkarne ke liye
+        document.getElementById("demo").innerHTML=sum;
+    </script>
+</body>
+</html>

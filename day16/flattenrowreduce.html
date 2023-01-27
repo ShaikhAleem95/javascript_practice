@@ -8,21 +8,26 @@
 </head>
 <body>
     
-    <h2>JavaScript Array.reduce()</h2>
-    <p>This example finds the sum of all numbers in an array:</p>
+
     
     <p id="demo"></p>
     
     <script>
-    const numbers = [45, 4, 9, 16, 25];
-    let sum = numbers.reduce(myFunction);
-    
-    
-    function myFunction(total, value, index, array) {
-      return total + value;
-    }
-    document.getElementById("demo").innerHTML = "The sum is " + sum;
+    var rows =[
+     [45, 4, 9,25],
+    [45, 4, 9,25],
+    [45, 4, 9,25]
+    ];
 
+    var matrixElements=rows.reduce(function(prev,current){
+
+    
+    return prev.concat(current);
+    }
+    );
+    console.log("");
+   console.log("matrixElements of array elemtn is ::",matrixElements);
+    
     </script>
     
     </body>
