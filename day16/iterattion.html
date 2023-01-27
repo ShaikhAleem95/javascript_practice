@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    <script>
+        const numArray=[34,25,12,22,36,56];
+        numArray.forEach(function(value,index,array)
+        {
+            //block of code
+            console.log("value::",value,"index::",index,"array::",array);
+
+
+          //  document.getElementById("demo").innerHTML = value; //last value print karra first 34 overwritte ans last value 56
+
+          //  document.getElementById("demo").innerHTML=   document.getElementById("demo").innerHTML+" "+value;//innerhtml +value all  value shhow
+
+        document.getElementById("demo").innerHTML += "  "+value;// same format innerhtml +value all  value shhow
+
+        });
+    </script>
+</body>
+</html>
