@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array sortin numbers</h1>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const points=[22,36,1,5,88,99,45];
+        document.getElementById("demo").innerHTML="NORMAL ARRAY "+" "+points;
+
+        points.sort(function(a,b){return a-b});
+        document.getElementById("demo1").innerHTML="SORTING ASSENDING ORDER"+" "+points;
+
+        points.sort(function(a,b){return b-a});
+        document.getElementById("demo2").innerHTML="SORTING DESENDING ORDER"+" "+points;
+
+    </script>
+</body>
+</html>

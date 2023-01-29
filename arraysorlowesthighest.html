@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>lowset and highest numbers</h1>
+    <p id="demo"></p>
+
+    <p>the lowest numbers is <span id="demo1"></span></p>
+    <p>the lowest numbers is <span id="demo2"></span></p>
+
+    <script>
+      const points = [10, 2, 30, 45, 88, 4];
+      document.getElementById("demo").innerHTML = points;
+     
+       //min value one type of method
+      document.getElementById("demo1").innerHTML = myArrayMin(points);
+
+      function myArrayMin(arr) {
+        return Math.min.apply(null, arr);
+      }
+       
+      //max value one tyye method
+      points.sort(function (a, b) {
+        return b - a;
+      });
+      document.getElementById("demo2").innerHTML = points[0];
+    </script>
+  </body>
+</html>
