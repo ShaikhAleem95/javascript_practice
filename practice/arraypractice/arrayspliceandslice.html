@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Array Methods</h2>
+    <h2>splice()</h2>
+    
+    <p>The splice() method adds new elements to an array, and returns an array with the deleted elements (if any):</p>
+    
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo1").innerHTML = "Original Array:<br> " + fruits;
+    
+  //  let  remove=fruits.splice(2,0,"kiwi","panapal");
+   // let  remove=fruits.splice(2,,"kiwi","panapal");
+   fruits.splice(0,1);
+
+
+
+    document.getElementById("demo2").innerHTML=fruits;
+    </script>
+
+
+<h2>slice()methed</h2>
+<!--
+JavaScript Array slice()
+The slice() method slices out a piece of an array into a new array.
+
+This example slices out a part of an array starting from array element 1 ("Orange"):
+
+Example
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+-->
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+
+<script>
+    const cars=["saab","volvo","bmw"];
+   // const removecars=cars.slice(1,2);
+   const removecars=cars.slice(1);
+    document.getElementById("demo4").innerHTML=removecars;
+</script>
+    </body>
+    </html>
+    
