@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>simple array program on button click event</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <button type="text" onclick="myfunction1()" >alphabets assending sorting</button>
+    <button type="text" onclick="myfunction2()" >alphabets desending sorting</button>
+
+    <button onclick="myfunction3()">number assending sort</button>
+    <button onclick="myfunction4()">number desending sort</button>
+
+    <script>
+        const points=[20,30,50,1,45,36,8];
+        document.getElementById("demo1").innerHTML=points;
+
+
+      const cars=["saab","nano","volvo","bmw"];
+      document.getElementById("demo").innerHTML=cars;
+
+      
+      function myfunction1()
+      { 
+            cars.sort();
+            console.log(cars);
+           document.getElementById("demo").innerHTML=cars;
+      }
+
+      function myfunction2()
+      { 
+            cars.sort();
+            cars.reverse();
+           document.getElementById("demo").innerHTML=cars;
+      }
+
+      function myfunction3()
+      {
+        points.sort(function(a,b){return a-b});
+        document.getElementById("demo1").innerHTML=points;
+
+      }
+      function myfunction4()
+      {
+        points.sort(function(a,b){return b-a});
+        document.getElementById("demo1").innerHTML=points;
+
+      }
+      
+        
+      
+
+    </script>
+
+</body>
+</html>
