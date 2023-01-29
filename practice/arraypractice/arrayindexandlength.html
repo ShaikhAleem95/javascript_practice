@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array index[0] changing and length</h1>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <p id="demo2"></p>
+
+
+ 
+    <script>
+        const cars=["saad","volvo","bmw"];
+
+        document.getElementById("demo").innerHTML=cars;
+
+         cars[0]="nano";
+         document.getElementById("demo1").innerHTML=cars;
+
+         cars[cars.length]="frari";
+         document.getElementById("demo3").innerHTML=cars;
+         
+    </script>
+     
+</body>
+</html>

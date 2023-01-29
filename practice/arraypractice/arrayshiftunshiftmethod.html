@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>shift()  shifting is equivalent of pop() ,but working on the first element insttead of the last</h1>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo6"></p>
+
+    <script>
+        const cars=["volvo","saad","bmw"];
+
+        document.getElementById("demo").innerHTML=cars;
+
+       // cars.shift();//remove first array element and shifts all other elements to a lover index 
+
+        document.getElementById("demo1").innerHTML=cars.shift();  //show only return value that was shifted out
+
+        document.getElementById("demo6").innerHTML=cars;
+    </script>
+
+
+<h1>unshift() method add a new element to an array at the beginning and unshifts older element</h1>
+
+<p id="demo2"></p>
+
+<p id="demo3"></p>
+
+
+<script>
+
+    const fruits=["mango","banana","orange"];
+
+    document.getElementById("demo2").innerHTML=fruits;
+
+    fruits.unshift("kiwi");
+
+    document.getElementById("demo3").innerHTML=fruits;
+
+
+</script>
+</body>
+</html>
