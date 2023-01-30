@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Round method value is <span id="demo"></span></p>
+    <p>ceil method value is <span id="demo1"></span></p>
+    <p>floor method value is <span id="demo2"></span></p>
+    <p>trun method value is <span id="demo3"></span></p>
+    <p>sign method value is <span id="demo4"></span></p>
+
+
+
+    <script>
+      //  document.getElementById("demo").innerHTML=Math.PI;//pi  ki value
+
+      document.getElementById("demo").innerHTML = Math.round(4.6); //big size positive     5
+
+      document.getElementById("demo1").innerHTML = Math.ceil(4.6); //big size negative out 5
+
+      document.getElementById("demo2").innerHTML = Math.floor(4.6); //big size positive     4
+
+      document.getElementById("demo3").innerHTML = Math.trunc(4.6); //big size positive     4
+
+      document.getElementById("demo4").innerHTML = Math.sign(4.6); //big size positive     1 active number
+
+
+    </script>
+  </body>
+</html>
