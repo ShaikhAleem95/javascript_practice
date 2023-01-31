@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="ageId" placeholder="Enter You Age" />
+
+    <button onclick="validate()">Vote!</button>
+     <p id="demo"></p>
+
+     <script>
+
+        //const x=20;
+        //conslog.log("comparisio",x>18);
+
+        const ageInputElement=document.getElementById("ageId");
+        const paragraphElement=document.getElementById("demo");
+
+        function validate()
+
+    {
+        console.log("value of input::",ageInputElement);
+        //block of code
+        
+    /*    if(Number(ageInputElement.value)>18)
+        {
+            //if tthe condition is true tthen this block is executtte
+
+            paragraphElement.innerHTML="Great ! your are eleigible to vote";
+        }
+        else
+        {
+            paragraphElement.innerHTML="your are too yyoung to vote!";
+
+        }
+*/
+     /*   //ternaryy operator syntax
+        //condition? "if true":"if false";
+        Conditional (Ternary) Operator
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+
+Syntax
+variablename = (condition) ? value1:value2 */
+
+        paragraphElement.innerHTML=
+               Number(ageInputElement.value)>18
+               ?"Great ! your are eleigible to vote": "your are too young to vote!";
+
+    }
+
+    
+
+
+     </script>
+    
+</body>
+</html>
