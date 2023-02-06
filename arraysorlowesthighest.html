@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      div {
+
+          max-width: 300px;
+          height: 100px;
+          background-color: powderblue;
+          border-radius: 20px;
+          padding: 25px 25px 25px 25px;
+          padding-left: 80px;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 18px;
+
+
+      }
+      
+  </style>
   </head>
   <body>
-    <h1>lowset and highest numbers</h1>
+    <div><h1>lowset and highest numbers</h1>
     <p id="demo"></p>
 
     <p>the lowest numbers is <span id="demo1"></span></p>
     <p>the lowest numbers is <span id="demo2"></span></p>
-
+  </div>
     <script>
       const points = [10, 2, 30, 45, 88, 4];
       document.getElementById("demo").innerHTML = points;

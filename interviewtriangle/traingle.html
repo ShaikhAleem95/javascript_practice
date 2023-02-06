@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+
+            max-width: 300px;
+            height: 400px;
+            background-color: rgb(231, 213, 233);
+            border-radius: 20px;
+            padding: 25px 25px 25px 25px;
+            padding-left: 80px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+
+
+        }
+        
+    </style>
+</head>
+<body>
+  <div>  
+   <h2>Left triangle star pattern in javascript</h2>
+   <p id="demo"></p>
+</div>
+      <script>
+        let n = 5; // you can take input from prompt or change the value
+        let string = "";
+        for (let i = 1; i <= n; i++) {
+          // printing spaces
+          for (let j = 0; j < n - i; j++) {
+            string += " ";
+          }
+          // printing star
+          for (let k = 0; k < i; k++) {
+            string += "*";
+          }
+          string += "<br>";
+        }
+       // document.write(`<pre>${string}</pre>`);
+        document.getElementById("demo").innerHTML=`<pre>${string}</pre>`;
+      </script>
+    </body>
+    </html>
