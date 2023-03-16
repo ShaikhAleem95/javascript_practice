@@ -14,10 +14,25 @@
 
         try{
             //block of code is the code where developer thinks that there can be some error
-            adddlert("Welcome guest!");
+
+           // adddlert("Welcome guest!");//ReferenceError: adddlert is not defined
+
+            console.log("this is try block");
+            
+
+
         }catch(error){
+
             //error occured kuch bhi error ka naam de sakte
             console.log("Error occured",error);
+
+            document.getElementById("demo").innerHTML=error;
+
+        }finally{   //error ao ya na ao finally open honga   
+
+            console.log("clear varialble");
+
+
         }
     </script>
 
