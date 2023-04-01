@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+
+    <script>
+
+        var x=this;
+        console.log("in global scope",x);
+        //in an object method, this keyword referes to the object
+        const person={
+            fname:"shaikh",
+            lname:"aleem",
+            age:30,
+            fullname:function(){
+                console.log("this keyword",this.fname,this.lname);
+                return this.fname+""+this.lname;
+            },
+        };
+        console.log("this full name is ",person.fullname());
+    </script>
+</body>
+</html>
